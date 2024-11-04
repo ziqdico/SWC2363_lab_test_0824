@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payment Form</title>
+</head>
+<body>
+
+    <h1>Employee Payment Form</h1>
+
+    <form action="Payment.php" method="post">
+        <!-- Textbox for Employee's Name -->
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br><br>
+
+        <!-- Textbox for Staff ID -->
+        <label for="staffID">Staff ID:</label>
+        <input type="text" id="staffID" name="staffID" required><br><br>
+
+        <!-- Select box for Month -->
+        <label for="month">Month:</label>
+        <select id="month" name="month" required>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select><br><br>
+
+        <!-- Select box for Position -->
+        <label for="position">Position:</label>
+        <select id="position" name="position" required>
+            <option value="Clerk 1">Clerk 1</option>
+            <option value="Clerk 2">Clerk 2</option>
+            <option value="Driver">Driver</option>
+            <option value="Temp staff">Temp staff</option>
+        </select><br><br>
+
+        <!-- Radio buttons for KWSP/SOCSO Deduction -->
+        <label>KWSP/SOCSO Deduction:</label><br>
+        <input type="radio" id="deductedYes" name="deduction" value="Yes" required>
+        <label for="deductedYes">Yes</label><br>
+        <input type="radio" id="deductedNo" name="deduction" value="No" required>
+        <label for="deductedNo">No</label><br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Payment</button>
+        <button type="reset">Clear All</button>
+    </form>
+
+</body>
+</html>
